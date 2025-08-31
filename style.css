@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --bg-color: rgb(0, 119, 255);
+    --bg-cards-page: aliceblue;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.header{
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar{
+    background-color: var(--bg-color);
+    display: grid;
+    grid-column: 1;
+    grid-row: 1/3;
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.greeting{
+    font-size: 24px;
+    font-weight: 680;
+}
+
+.btns{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+button{
+    background-color: var(--bg-color);
+    border: 1px solid transparent;
+    border-radius: 18px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.articles{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    grid-auto-flow: column;
+    background-color: var(--bg-cards-page);
+    padding: 20px;
+}
+
+.card-page{
+    display: grid;
+    grid-column: 1;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.cards{
+    display: grid;
+    justify-self: start;
+    padding: 10px;
+    border: transparent;
+    border-left: 8px solid orange;
+    border-radius: 8px;
+    background-color: white;
+    height: 180px;
+}
+
+.news{
+    display: grid;
+    grid-column: 2;
+    gap: 50px;
+}
+
+.trend{
+    background-color: aqua;
+    border: transparent;
+    border-radius: 5px;
+    padding: 10px;
+}
