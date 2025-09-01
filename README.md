@@ -1,14 +1,13 @@
 # ⚡ Admin Dashboard
 
-> ⚡ Modern Admin Dashboard built with HTML, CSS, and JavaScript. Includes responsive layout, reusable components, and customizable themes.  
+> ⚡ Modern Admin Dashboard built with HTML and CSS.  
 
-A clean and responsive **Admin Dashboard** built with modern web technologies.  
+A clean **Admin Dashboard** built with modern web technologies.  
 This project is designed to provide an easy-to-use interface for managing data, monitoring stats, and controlling application settings.
 
 ---
 
 ## ✨ Features
-- 📊 Responsive layout that works on desktop & mobile
 - 🎨 Reusable UI components (cards, tables, charts, avatars, sidebars, etc.)
 - 🌙 Light/Dark mode support (optional)
 - 📈 Chart integration for analytics
