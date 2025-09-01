@@ -18,11 +18,70 @@
     display: grid;
     grid-column: 2;
     grid-row: 1;
-    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
     padding: 10px;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between;
+    align-items: center; */
 }
+
+input{
+    background-color: var(--bg-cards-page);
+    width: 550px;
+    height: 30px;
+    border: transparent;
+    border-radius: 15px;
+}
+
+.navbar1{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar2{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-navbar{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    padding-right: 60px;
+}
+
+.avatar {
+    width: 25px;        /* size of the circle */
+    height: 25px;
+    border-radius: 50%; /* makes it a circle */
+    background-color: #FFD54F; /* yellow background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;   /* hides parts of the image outside the circle */
+  }
+  
+  .avatar img,
+  .avatar2 img {
+    width: 100%;   /* adjust image size inside */
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .avatar2 {
+    width: 60px;        /* size of the circle */
+    height: 60px;
+    border-radius: 50%; /* makes it a circle */
+    background-color: #FFD54F; /* yellow background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;   /* hides parts of the image outside the circle */
+  }
 
 .sidebar{
     background-color: var(--bg-color);
@@ -30,11 +89,28 @@
     grid-column: 1;
     grid-row: 1/3;
     color: white;
-    padding: 10px;
-    padding-left: 20px;
+    padding-left: 15px;
+    padding-top: 15px;
+    gap: 50px;
+    align-content: baseline;
+}
+
+#icons{
+    filter: invert(1);
+}
+
+.icons{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    gap: 12px;
 }
 
 .greeting{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
     font-size: 24px;
     font-weight: 680;
 }
@@ -57,11 +133,31 @@ button{
 
 .articles{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 15fr;
     gap: 20px;
     grid-auto-flow: column;
     background-color: var(--bg-cards-page);
     padding: 20px;
+}
+
+.label-text{
+    display: grid;
+    grid-auto-flow: column;
+    grid-row: 1;
+    grid-column: 1/3;
+    grid-template-columns: 3fr 1fr;
+    font-size: 18px;
+    font-weight: bold;
+    align-items: end;
+}
+
+#projects{
+    grid-column: 1;
+}
+
+#announcements{
+    grid-column: 2;
 }
 
 .card-page{
@@ -82,6 +178,13 @@ button{
     height: 180px;
 }
 
+.share-fork{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: end;
+}
+
 .news{
     display: grid;
     grid-column: 2;
@@ -89,8 +192,32 @@ button{
 }
 
 .trend{
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
     border: transparent;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 8px;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.news-container{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.3px solid black;
+    padding-bottom: 20px;
+}
+
+#news-text{
+    font-size: 14px;
+    color: gray;
+}
+
+.quotes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+    font-weight: normal;
 }
